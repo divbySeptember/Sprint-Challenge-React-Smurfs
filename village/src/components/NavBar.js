@@ -1,5 +1,6 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import './Style.css'
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light>
+        <Navbar className="NewNav" color="faded" light>
           <NavbarBrand href="/" className="mr-auto">Smurf Village</NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
