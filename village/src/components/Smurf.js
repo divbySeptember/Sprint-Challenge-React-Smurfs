@@ -89,7 +89,10 @@ class Smurf extends React.Component {
                 placeholder="Age"
               />
             </FormGroup>
-            <Button type ="submit" color="info" onClick={this.submitUpdate}>Submit</Button>
+            <Button 
+            type ="submit" 
+            color="info" 
+            onClick={this.submitUpdate}>Submit</Button>
           </Form>
         </div>
       );
