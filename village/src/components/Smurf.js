@@ -8,7 +8,10 @@ class Smurf extends React.Component {
     super();
 
     this.state = {
-      smurf: null
+      name: '',
+      height: '',
+      age: '',
+      showForm: false
     };
   }
 
@@ -20,8 +23,8 @@ class Smurf extends React.Component {
   getSmurf = id => {
     axios
       .get(`http://localhost:3333/smurfs`)
-      .then(response => {
-        const rightSmurf = response.data.find(smurf => `${smurf.id}` === id);
+      .then(res => {
+        const rightSmurf = res.data.find(smurf => `${smurf.id}` === id);
         this.setState({ smurf: rightSmurf });
       })
       .catch(err => console.log(err));
@@ -36,6 +39,7 @@ class Smurf extends React.Component {
       }
     });
   };
+
 
 
   submitUpdate = e => {

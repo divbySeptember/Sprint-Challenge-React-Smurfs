@@ -12,3 +12,8 @@
         display: flex;
         justify-content: flex-start;
     }
+
+
+    h3{
+        color: rgb(5, 142, 157);
+    }
