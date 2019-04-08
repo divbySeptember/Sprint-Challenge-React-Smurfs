@@ -1,0 +1,19 @@
+.Smurf {
+    width: 400px;
+    padding: 5% 40px;
+    border: 1px solid rgb(79, 79, 79);
+    /* display: flex;
+    justify-content: center;     */
+    
+    }
+
+
+    .NewNav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+    h3{
+        color: rgb(5, 142, 157);
+    }
